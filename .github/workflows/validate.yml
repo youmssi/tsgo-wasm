@@ -33,5 +33,5 @@ jobs:
 
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo fmt --check
-      - run: cargo test --release
-      - run: cargo check --no-default-features
+      - run: cargo test --release --locked
+      - run: cargo check --no-default-features --locked
